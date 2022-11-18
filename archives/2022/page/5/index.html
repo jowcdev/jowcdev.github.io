@@ -702,20 +702,21 @@ var _hmt = _hmt || [];
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/2022/10/15/03%20%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6/3.2%20%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6%E5%BC%80%E5%8F%91/3.2.1%20%20ETH%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6%E5%BC%80%E5%8F%91/">
+			<a href="/2022/10/15/03%20%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6/3.3%20Solidity%E5%9F%BA%E7%A1%80/3.3.1%20%20%E5%B8%B8%E9%87%8F%E3%80%81%E5%8F%98%E9%87%8F%E5%92%8C%E5%87%BD%E6%95%B0/">
 				<h2 class="index-title">
-					3.2、智能合约开发
+					常量、变量和函数
 				</h2>
 				<div class="index-brief">
-					一、常用开发方式以太坊智能合约开发语言是 solidity
+					一、常量solidity 常量支持 值类型 和 字符串类型
+contract ConstantTest &#123;
 
-智能合约可以通过下两种方式开发
+    uint constant x = 11 ** 11;
+    string constant text = &quot;abcdefg&quot;;
 
-1.1、浏览器remix.ethereum.org　
-1.2、truffle开发工具 vscode + ganache + 
+&#125;
 
-     
-二、truffle 开发步骤1、安装trufflenpm ins
+
+
 					...
 				</div>
 			</a>
@@ -728,19 +729,16 @@ var _hmt = _hmt || [];
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2022/10/15/03%20%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6/3.2%20%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6%E5%BC%80%E5%8F%91/3.2.2%20%20%E9%83%A8%E7%BD%B2%E5%88%B0HB%E6%B5%8B%E8%AF%95%E7%BD%91/">
+			<a href="/2022/10/15/03%20%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6/3.3%20Solidity%E5%9F%BA%E7%A1%80/3.3.2%20%20%E4%BF%AE%E9%A5%B0%E5%99%A8/">
 				<h2 class="index-title">
-					3.2.2 部署到测试网补充
+					修饰器
 				</h2>
 				<div class="index-brief">
-					1、安装truffle&#x2F;hdwallet-providernpm install @truffle/hdwallet-provider
-
-如果报错，试试以下
-npm i @truffle/hdwallet-provider@next
-
-	
+					修饰器，通过定义一个方法，使用该方法去修饰其他方法。用个没有用修饰器的例子说明，onlyOwner 是一个校验地址是不是原来账号的地址的方法。将该合约部署
+contract Test &#123;
     
-2、在 truffle-config.j
+    address public owner;
+    uint256 public p
 					...
 				</div>
 			</a>
